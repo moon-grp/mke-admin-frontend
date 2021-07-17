@@ -2,18 +2,18 @@
   <v-app dark>
     <div>
       <v-app-bar color="#FFFFFF" raised>
-        <nuxt-link to="/admin/dashboard">
-          <div class="text-capitalize fnt">dashboard..</div>
+        <nuxt-link to="/autos">
+          <div class="text-capitalize fnt">dashboard..autos</div>
         </nuxt-link>
         <v-spacer></v-spacer>
-        <nuxt-link to="/createproduct">
+        <nuxt-link to="autos/createproduct">
           <v-btn
             rounded
             color="#6C63FF"
             dark
             text
             class="text-capitalize mx-2 hidden-sm-and-down"
-            >create product</v-btn
+            >add car</v-btn
           >
         </nuxt-link>
 
@@ -39,17 +39,6 @@
           >
         </nuxt-link>
 
-         <nuxt-link to="/autos">
-          <v-btn
-            rounded
-            color="#6C63FF"
-            dark
-            text
-            class="text-capitalize mx-2 hidden-sm-and-down"
-            >autos</v-btn
-          >
-        </nuxt-link>
-
         <v-app-bar-nav-icon
           @click.stop="drawer = !drawer"
           class="hidden-md-and-up"
@@ -72,9 +61,6 @@
                 </nuxt-link>
                   <nuxt-link to="#">
                   <div class="text-capitalize navT">analytics</div>
-                </nuxt-link>
-                    <nuxt-link to="/autos">
-                  <div class="text-capitalize navT">autos</div>
                 </nuxt-link>
               </v-list-item-title>
             </v-list-item>
